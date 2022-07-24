@@ -14,5 +14,7 @@ namespace Model
         public DateTime Date { get; set; }
         public double Amount { get; set; }
         public string Type { get; set; }    
+
+        public int IdUser { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services
+namespace Services.Expense
 {
     public class ExpenseService : IExpenseRepository
     {
@@ -16,16 +16,17 @@ namespace Services
         {
 
             return con.TbExpensies.ToList();
-        
+
         }
 
-        public MExpense GetById(int? Id) {
+        public MExpense GetById(int? Id)
+        {
 
 
             return con.TbExpensies.Find(Id);
-        
-        
-        
+
+
+
         }
     }
 }

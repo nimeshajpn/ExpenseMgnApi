@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Services.Model
 {
-    public class MExpense
+    public class CreateExpenseDto
     {
-        public int Id { get; set; }
+        
         public string Category { get; set; }
-       
+
         public DateTime Date { get; set; }
         public double Amount { get; set; }
-        public string Type { get; set; }    
-
-       
+        public string Type { get; set; }
     }
 }

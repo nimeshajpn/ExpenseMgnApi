@@ -11,5 +11,8 @@ namespace Services.Expense
     {
         public List<MExpense> GetExpense();
         public MExpense GetById(int? Id);
+        public MExpense AddEXpense(MExpense e);
+        public void UpdateEXpense(MExpense e);
+        public void DeleteExpense(MExpense e);
     }
 }

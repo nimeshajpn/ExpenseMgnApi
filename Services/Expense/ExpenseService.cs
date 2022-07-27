@@ -28,5 +28,30 @@ namespace Services.Expense
 
 
         }
+        public MExpense AddEXpense(MExpense e)
+        { 
+        con.TbExpensies.Add(e);
+        con.SaveChanges();
+
+
+            return con.TbExpensies.Find(e.Id);
+        }
+        
+        public void UpdateEXpense(MExpense e)
+        { 
+       
+        con.SaveChanges();
+
+
+       
+        }
+        public void DeleteExpense(MExpense e)
+        {
+            con.TbExpensies.Remove(e);
+            con.SaveChanges();
+
+
+            
+        }
     }
 }
